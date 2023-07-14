@@ -150,7 +150,6 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  transform: scale(1.2);
   color: #a17fe0;
 }
 
@@ -197,8 +196,8 @@ h6,
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #dd72b6;
 }
 
@@ -400,6 +399,7 @@ h6,
   background: #a17fe0;
   border-radius: 2px;
   font-size: 22px;
+  border-radius: 25px;
   transition: 0.5s;
 }
 
