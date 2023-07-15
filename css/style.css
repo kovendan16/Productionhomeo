@@ -199,6 +199,9 @@ h6,
   width: 2rem;
   height: 2rem;
   background-color: #dd72b6;
+  color: #069 !important;
+  position: relative;
+  top: 50px;
 }
 
 @media (min-width: 991.98px) {
