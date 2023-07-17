@@ -134,10 +134,29 @@ color: #fff;
       </div>
       <a href="#footer" class="nav-item nav-link">Contact</a>
     </div>
+<style>
 
+  @keyframes vibrant-animation{
+
+   0% {
+      transform: scale(1);
+      color: #9d50bb;
+    }
+    50% {
+      transform: scale(1.2);
+      color: #b993d6;
+    }
+    100% {
+      transform: scale(1);
+      color: initial;
+    }
+  }
+  
+</style>
     <a href="#appo" class="btn btn-primary py-2 px-4 ms-0">Appointment</a>
     <a href="tel:917338822967">
-      <i class="fab fa-whatsapp nav-link custom-call">+91 7338822967</i>
+      <i class="fab fa-whatsapp nav-link custom-call" style="font-size: 25px;    animation: vibrant-animation 2s infinite;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out"> </i>
     </a>
   </div>
 </nav>
