@@ -5,6 +5,7 @@
   --light: #eef9ff;
   --dark: #060607;
 }
+
 .logo {
   width: 280px;
 }
@@ -33,6 +34,7 @@ h6,
 .bg-primary-custom {
   background: #a17fe0;
 }
+
 .bg-dark-custom {
   background: #b993d6;
 }
@@ -63,7 +65,13 @@ h6,
   background: #a17fe0;
   border-color: var(--secondary);
 }
+.custom-call {
+  color: #b993d6;
+}
 
+.custom-call :hover {
+  color: red;
+}
 .btn-secondary:hover {
   background: #a17fe0;
   color: #fff;
