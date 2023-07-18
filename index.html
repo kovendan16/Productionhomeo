@@ -103,7 +103,7 @@ color: #fff;
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </div> -->
     <!-- Navbar Start -->
 <!-- Navbar End -->
@@ -111,7 +111,7 @@ color: #fff;
   <a href="index.html" class="navbar-brand p-0">
     <img src="./img/logo.png" class="logo" alt="">
   </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="color: #b993d6;">
+  <button class="navbar-toggler jump-animation" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" style="color: #b993d6   ;">
     <span class="navbar-toggler-icon"></span>
   
   </button>
@@ -134,29 +134,28 @@ color: #fff;
       </div>
       <a href="#footer" class="nav-item nav-link">Contact</a>
     </div>
+
 <style>
 
   @keyframes vibrant-animation{
+    0% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
 
-   0% {
-      transform: scale(1);
-      color: #9d50bb;
-    }
-    50% {
-      transform: scale(1.2);
-      color: #b993d6;
-    }
-    100% {
-      transform: scale(1);
-      color: #9d50bb;
-    }
+  
+  0% {
+    transform: rotate(0deg);
+  }
   }
   
 </style>
     <a href="#appo" class="btn btn-primary py-2 px-4 ms-0">Appointment</a>
     <a href="tel:917338822967">
-      <i class="fab fa-whatsapp nav-link custom-call" style="font-size: 25px;    animation: vibrant-animation 2s infinite;
-      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out"> </i>
+      <i class="fab fa-whatsapp nav-link custom-call" style="font-size: 25px;    animation: vibrant-animation 4s infinite;
+      transition: transform 0.3s ease-in-out, color 0.4s linear infitine"> </i>
     </a>
   </div>
 </nav>
@@ -1601,9 +1600,18 @@ opacity: 0.8;
   // Reset the form fields
   document.getElementById("contactForm").reset();
 });
+var toggler = document.querySelector(".navbar-toggler");
 
+toggler.addEventListener("click", () => {
+  // Toggle the "jump-animation" class on the body element (or any other desired element)
+  
+  var toggler = document.querySelector(".navbar-toggler");
+  toggler.classList.toggle("jump-animation");
+  toggler.classList.toggle("stop-animation");
 
-    </script>
+});
+
+   </script>
         
 
 </body>

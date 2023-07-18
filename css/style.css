@@ -5,7 +5,26 @@
   --light: #eef9ff;
   --dark: #060607;
 }
+/* Add a class for the jump animation */
+.jump-animation {
+  animation: jump 0.5s linear infinite;
+}
 
+/* Define the jump animation keyframes */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.stop-animation {
+  animation-play-state: paused;
+}
 .logo {
   width: 280px;
 }
